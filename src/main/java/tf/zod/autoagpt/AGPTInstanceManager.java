@@ -1,13 +1,17 @@
 package tf.zod.autoagpt;
 
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class AGPTInstanceManager {
+
     private DockerCommandManager dockerCommandManager;
+    private DockerImageManager dockerImageManager;
 
     public AGPTInstanceManager() {
         this.dockerCommandManager = new DockerCommandManager();
+        this.dockerImageManager = new DockerImageManager();
     }
 
     public void pauseInstance(String instanceName) {
@@ -21,11 +25,19 @@ public class AGPTInstanceManager {
     }
 
     public void saveInstance(String instanceName, String imageName) {
-        String command = "docker commit " + instanceName + " " + imageName;
-        dockerCommandManager.executeCommand(command);
+        dockerImageManager.saveImage(instanceName, imageName);
     }
 
     public void copyInstance(String instanceName, String newImageName) {
-        saveInstance(instanceName, newImageName);
+        dockerImageManager.saveImage(instanceName, newImageName);
+        dockerImageManager.loadImage(newImageName);
+    }
+
+    public List<String> listInstances() {
+        List<String> containers = dockerCommandManager.listContainers();
+        return containers.stream()
+                .filter(name -> name.startsWith("auto-gpt"))
+                .collect(Collectors.toList());
     }
 }
+

@@ -18,12 +18,14 @@ public class App {
         // obtain best font
         try (InputStream stream = loader.getResourceAsStream("fonts/JetBrainsMono-Medium.ttf")) {
             if (jbFont != null) {
-                Font jbFont = Font.createFont(Font.TRUETYPE_FONT, jbFont);
+                if (stream != null) {
+                    jbFont = Font.createFont(Font.TRUETYPE_FONT, stream);
+                }
             }
             System.out.println("The FONT didn't last...");
         }
-    }
 
+        // initialize and pack GUI
 
         AGPTInstanceController aGPTInstanceController = new AGPTInstanceController();
 
@@ -32,22 +34,28 @@ public class App {
         AGPTInstanceController AGPTInstanceController = new AGPTInstanceController();
         PluginManager pluginManager = new PluginManager();
 
-        // Use the agptInstanceManager and pluginManager to manage Auto-GPT instances and plugins
-    frame = new JFrame("MIKE");
-
         SwingUtilities.invokeLater(() -> {
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setMinimumSize(new Dimension(400, 300));
-        frame.setSize(800, 600);
-        frame.setFont(new Font(jbFont));
 
-        frame.add(aGPTInstanceController.getPanel());
-        //frame.add(AGPTInstanceController.getPanel());
-        frame.add(pluginController.getPanel());
-        //frame.add(pluginController.getPanel());
+            // set look & feel
+            try {
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+                System.err.println("ERROR SETTING LOOK & FEEL");
+                ex.printStackTrace();
+            }
 
-        frame.setVisible(true);
-      };
+            JFrame frame = new JFrame("Auto-GPT Manager");
 
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setSize(800, 600);
+
+            frame.add(AGPTInstanceController.getPanel());
+            frame.add(pluginController.getPanel());
+
+            frame.pack();
+
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+        });
     }
 }
