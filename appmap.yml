@@ -1,0 +1,3 @@
+name: auto-agpt
+packages:
+  - tf.zod.auto-agpt

@@ -17,8 +17,29 @@ public class AGPTInstanceController {
 
     private JComboBox<String> instanceComboBox;
 
+    public AGPTInstanceController(tf.zod.autoagpt.AGPTInstanceManager AGPTInstanceManager) {
+        this.AGPTInstanceManager = AGPTInstanceManager;
+    }
+
     public AGPTInstanceController() {
+
         this.AGPTInstanceManager = new AGPTInstanceManager();
+
+        // create the panel
+        panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+
+        // create the buttons
+        pauseButton = new JButton("Pause");
+        exitButton = new JButton("Exit");
+        saveButton = new JButton("Save");
+        copyButton = new JButton("Copy");
+
+        // add the buttons to the panel
+        panel.add(pauseButton);
+        panel.add(exitButton);
+        panel.add(saveButton);
+        panel.add(copyButton);
 
         // get the plugin list from plugin managers, show
         List<String> instances = AGPTInstanceManager.listInstances();

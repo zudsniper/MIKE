@@ -21,14 +21,14 @@ public class App {
     public static void main(String[] args) throws IOException, FontFormatException {
 
         // obtain best font
-        try (InputStream stream = loader.getResourceAsStream("fonts/JetBrainsMono-Medium.ttf")) {
-            if (jbFont != null) {
-                if (stream != null) {
-                    jbFont = Font.createFont(Font.TRUETYPE_FONT, stream);
-                }
+        try (InputStream stream = loader.getResourceAsStream("/fonts/JetBrainsMono-Medium.ttf")) {
+            if (jbFont == null && stream != null) {
+                jbFont = Font.createFont(Font.TRUETYPE_FONT, stream);
             }
-            System.out.println("The FONT didn't last...");
+        } catch (IOException | FontFormatException e) {
+            e.printStackTrace();
         }
+
 
         // initialize and pack GUI
 
