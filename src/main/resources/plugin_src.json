@@ -1,0 +1,199 @@
+{
+  "plugins": [
+    {
+      "name": "Auto-GPT-Dolly-Plugin",
+      "description": "A cloner plugin that enables Auto-GPT to clone itself and build an army of powerful cooperating minions.",
+      "url": "https://github.com/lc0rp/Auto-GPT-Dolly-Plugin"
+    },
+    {
+      "name": "Astro Info",
+      "description": "This gives Auto-GPT info about astronauts.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/astro"
+    },
+    {
+      "name": "API Tools",
+      "description": "This allows Auto-GPT to make API calls of various kinds.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/api_tools"
+    },
+    {
+      "name": "Baidu Search",
+      "description": "This search plugin integrates Baidu search engines into Auto-GPT.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/baidu_search"
+    },
+    {
+      "name": "Bing Search",
+      "description": "This search plugin integrates Bing search engines into Auto-GPT.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/bing_search"
+    },
+    {
+      "name": "Bluesky",
+      "description": "Enables Auto-GPT to retrieve posts from Bluesky and create new posts.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/bluesky"
+    },
+    {
+      "name": "Email",
+      "description": "Revolutionize email management with the Auto-GPT Email Plugin, leveraging AI to automate drafting and intelligent replies.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/email"
+    },
+    {
+      "name": "News Search",
+      "description": "This search plugin integrates News Articles searches, using the NewsAPI aggregator into Auto-GPT.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/news_search"
+    },
+    {
+      "name": "Planner",
+      "description": "Simple Task Planner Module for Auto-GPT",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/blob/master/src/autogpt_plugins/planner/"
+    },
+    {
+      "name": "Random Values",
+      "description": "Enable Auto-GPT to generate various random numbers and strings.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/random_values"
+    },
+    {
+      "name": "SceneX",
+      "description": "Explore image storytelling beyond pixels with the Auto-GPT SceneX Plugin.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/scenex"
+    },
+    {
+      "name": "Telegram",
+      "description": "A smoothly working Telegram bot that gives you all the messages you would normally get through the Terminal.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/telegram"
+    },
+    {
+      "name": "Twitter",
+      "description": "Auto-GPT is capable of retrieving Twitter posts and other related content by accessing the Twitter platform via the v1.1 API using Tweepy.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/twitter"
+    },
+    {
+      "name": "Wikipedia Search",
+      "description": "This allows Auto-GPT to use Wikipedia directly.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/wikipedia_search"
+    },
+    {
+      "name": "WolframAlpha Search",
+      "description": "This allows AutoGPT to use WolframAlpha directly.",
+      "url": "https://github.com/Significant-Gravitas/Auto-GPT-Plugins/tree/master/src/autogpt_plugins/wolframalpha_search"
+    },
+    {
+      "name": "Alpaca-Trading",
+      "description": "Trade stocks and crypto, paper or live with Auto-GPT",
+      "url": "https://github.com/danikhan632/Auto-GPT-AlpacaTrader-Plugin"
+    },
+    {
+      "name": "AutoGPT User Input Request",
+      "description": "Allow Auto-GPT to specifically request user input in continuous mode",
+      "url": "https://github.com/HFrovinJensen/Auto-GPT-User-Input-Plugin"
+    },
+    {
+      "name": "BingAI",
+      "description": "Enable Auto-GPT to fetch information via BingAI, saving time, API requests while maintaining accuracy. This does not remove the need for OpenAI API keys",
+      "url": "https://github.com/gravelBridge/AutoGPT-BingAI"
+    },
+    {
+      "name": "Crypto",
+      "description": "Trade crypto with Auto-GPT",
+      "url": "https://github.com/isaiahbjork/Auto-GPT-Crypto-Plugin"
+    },
+    {
+      "name": "Discord",
+      "description": "Interact with your Auto-GPT instance through Discord",
+      "url": "https://github.com/gravelBridge/AutoGPT-Discord"
+    },
+    {
+      "name": "Dolly AutoGPT Cloner",
+      "description": "A way to compose & run multiple Auto-GPT processes that cooperate, till core has multi-agent support",
+      "url": "https://github.com/pr-0f3t/Auto-GPT-Dolly-Plugin"
+    },
+    {
+      "name": "Google Analytics",
+      "description": "Connect your Google Analytics Account to Auto-GPT.",
+      "url": "https://github.com/isaiahbjork/Auto-GPT-Google-Analytics-Plugin"
+    },
+    {
+      "name": "IFTTT webhooks",
+      "description": "This plugin allows you to easily integrate IFTTT connectivity using Maker",
+      "url": "https://github.com/AntonioCiolino/AutoGPT-IFTTT"
+    },
+    {
+      "name": "iMessage",
+      "description": "Send and Get iMessages using Auto-GPT",
+      "url": "https://github.com/danikhan632/Auto-GPT-Messages-Plugin"
+    },
+    {
+      "name": "Instagram",
+      "description": "Instagram access",
+      "url": "https://github.com/jpetzke/AutoGPT-Instagram"
+    },
+    {
+      "name": "Mastodon",
+      "description": "Simple Mastodon plugin to send toots through a Mastodon account",
+      "url": "https://github.com/ppetermann/AutoGPTMastodonPlugin"
+    },
+    {
+      "name": "MetaTrader",
+      "description": "Connect your MetaTrader Account to Auto-GPT.",
+      "url": "https://github.com/isaiahbjork/Auto-GPT-MetaTrader-Plugin"
+    },
+    {
+      "name": "Notion",
+      "description": "Notion plugin for Auto-GPT.",
+      "url": "https://github.com/doutv/Auto-GPT-Notion"
+    },
+    {
+      "name": "Slack",
+      "description": "This plugin allows to receive commands and send messages to slack channels",
+      "url": "https://github.com/adithya77/Auto-GPT-slack-plugin"
+    },
+    {
+      "name": "Spoonacular",
+      "description": "Find recipe inspirations using Auto-GPT",
+      "url": "https://github.com/minfenglu/Auto-GPT-Spoonacular-Plugin"
+    },
+    {
+      "name": "System Information",
+      "description": "This plugin adds an extra line to the prompt, serving as a hint for the AI to use shell commands likely supported by the current system. By incorporating this plugin, you can ensure that the AI model provides more accurate and system-specific shell commands, improving its overall performance and usefulness.",
+      "url": "https://github.com/hdkiller/Auto-GPT-SystemInfo"
+    },
+    {
+      "name": "TiDB Serverless",
+      "description": "Connect your TiDB Serverless database to Auto-GPT, enable get query results from database",
+      "url": "https://github.com/pingcap/Auto-GPT-TiDB-Serverless-Plugin"
+    },
+    {
+      "name": "Todoist-Plugin",
+      "description": "Allow Auto-GPT to programmatically interact with your Todoist to create, update, and manage your Todoist",
+      "url": "https://github.com/danikhan632/Auto-GPT-Todoist-Plugin"
+    },
+    {
+      "name": "Weather",
+      "description": "A simple weather plugin wrapping around python-weather",
+      "url": "https://github.com/ppetermann/Auto-GPT-WeatherPlugin"
+    },
+    {
+      "name": "Web-Interaction",
+      "description": "Enable Auto-GPT to fully interact with websites! Allows Auto-GPT to click elements, input text, and scroll",
+      "url": "https://github.com/gravelBridge/AutoGPT-Web-Interaction"
+    },
+    {
+      "name": "WolframAlpha",
+      "description": "Access to WolframAlpha to do math and get accurate information",
+      "url": "https://github.com/gravelBridge/AutoGPT-WolframAlpha"
+    },
+    {
+      "name": "YouTube",
+      "description": "Various YouTube features including downloading and understanding",
+      "url": "https://github.com/jpetzke/AutoGPT-YouTube"
+    },
+    {
+      "name": "Zapier webhooks",
+      "description": "This plugin allows you to easily integrate Zapier connectivity",
+      "url": "https://github.com/AntonioCiolino/AutoGPT-Zapier"
+    },
+    {
+      "name": "Project Management",
+      "description": "Streamline your Project Management with ease: Jira, Trello, and Google Calendar Made Effortless",
+      "url": "https://github.com/minfenglu/AutoGPT-PM-Plugin"
+    }
+  ]
+}

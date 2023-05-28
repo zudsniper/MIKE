@@ -1,4 +1,4 @@
-package tf.zod.autoagpt;
+package tf.zod.autoagpt.plugins;
 
 import tf.zod.autoagpt.model.*;
 

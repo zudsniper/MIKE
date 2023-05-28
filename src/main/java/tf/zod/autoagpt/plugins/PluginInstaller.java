@@ -1,6 +1,7 @@
-package tf.zod.autoagpt;
+package tf.zod.autoagpt.plugins;
 
 import lombok.extern.slf4j.Slf4j;
+import tf.zod.autoagpt.DockerCommandManager;
 import tf.zod.autoagpt.model.Plugin;
 
 @Slf4j

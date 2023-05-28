@@ -1,10 +1,15 @@
 package tf.zod.autoagpt;
 
+import lombok.extern.slf4j.Slf4j;
+import tf.zod.autoagpt.plugins.PluginController;
+import tf.zod.autoagpt.plugins.PluginManager;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 import java.io.InputStream;
 
+@Slf4j
 public class App {
 
     protected final static ClassLoader loader = Thread.currentThread().getContextClassLoader();

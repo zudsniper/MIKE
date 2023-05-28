@@ -1,9 +1,12 @@
 package tf.zod.autoagpt;
 
+import lombok.extern.slf4j.Slf4j;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 
+@Slf4j
 public class AGPTInstanceController {
     private AGPTInstanceManager AGPTInstanceManager;
     private JPanel panel;
@@ -35,13 +38,13 @@ public class AGPTInstanceController {
         saveButton.addActionListener(e -> {
             String instanceName = (String) instanceComboBox.getSelectedItem();
             // TODO: This doesn't make sense... why would we get it from the GUI? it's an isolated docker container
-            String imageName = /* get the image name from the GUI */;
+            String imageName = null /* get the image name from the GUI */;
             AGPTInstanceManager.saveInstance(instanceName, imageName);
         });
 
         copyButton.addActionListener(e -> {
             String instanceName = (String) instanceComboBox.getSelectedItem();
-            String newImageName = /* get the new image name from the GUI */;
+            String newImageName = null /* get the new image name from the GUI */;
             AGPTInstanceManager.copyInstance(instanceName, newImageName);
         });
 
